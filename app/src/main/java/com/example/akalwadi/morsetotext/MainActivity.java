@@ -6,13 +6,14 @@ import android.telephony.SmsManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     public EditText ettext;
     public Button converttomorse;
-    public EditText etshowmorse;
+    public TextView etshowmorse;
     String phno;
     String convertedText;
     String normaltext;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         ettext = (EditText) findViewById(R.id.ettext);
         converttomorse = (Button) findViewById(R.id.btnconvert);
-        etshowmorse = (EditText) findViewById(R.id.etshowmorse);
+        etshowmorse = (TextView) findViewById(R.id.etshowmorse);
 
         converttomorse.setOnClickListener(new View.OnClickListener() {
             @Override
